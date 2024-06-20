@@ -1,10 +1,14 @@
 name: Working Dirs & Shells
 on: [push]
+defaults:
+  run:
+    shell: bash
 jobs:
     display-wd-info-ubuntu:
         runs-on: ubuntu-latest
         steps: 
         - name: Display Working Directory & List Files
+        #github sha: id of commit that triggered the workflow to run?
           run: |
                 pwd
                 ls -a
