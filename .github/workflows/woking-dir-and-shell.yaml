@@ -38,7 +38,7 @@ jobs:
         # echo $xxxx =  echo $env:xxxx
           run: |
                 Get-Location
-                ls -a
+                dir
                 echo $env:GITHUB_SHA
                 echo $env:GITHUB_REPOSITORY
                 echo $env:GITHUB_WORKSPACE 
